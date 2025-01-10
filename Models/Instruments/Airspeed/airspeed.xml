@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+    <path>airspeed.ac</path>
+
+    <effect>
+        <inherits-from>Aircraft/cassut/Models/Effects/cassut_glass</inherits-from>
+        <object-name>airspeedglass</object-name>
+    </effect>
+
+    <animation>
+        <object-name>airspeedneedle</object-name>
+        <type>rotate</type>
+        <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+        <factor>-0.775</factor>
+        <offset-deg>0</offset-deg>
+        <center>
+            <x-m>0</x-m>
+            <y-m> 0 </y-m>
+            <z-m> 0</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+</PropertyList>

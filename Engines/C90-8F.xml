@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!--
+  File:     C90-8F.xml
+  Author:   Aero-Matic v 0.83
+
+  Inputs:
+    name:           C90-8F
+    type:           piston
+    power:          120 hp
+    augmented?      no
+    injected?       no
+-->
+<piston_engine name="C90-8F">
+    <minmp unit="INHG"> 9.0 </minmp>
+    <maxmp unit="INHG"> 11.0 </maxmp>
+    <displacement unit="CC"> 3290 </displacement>
+    <!--<bore
+    unit="{IN | M}"> {number} </bore>  Unused -->
+    <stroke unit="M"> 0.2 </stroke>
+    <cylinders> 4 </cylinders><!-- Unused -->
+    <cylinder-head-mass unit="KG"> 10 </cylinder-head-mass>
+    <compression-ratio> 7.0 </compression-ratio>
+    <sparkfaildrop> 0.5 </sparkfaildrop>
+    <maxhp unit="HP"> 120 </maxhp>
+    <cycles> 4 </cycles>
+    <idlerpm> 500 </idlerpm>
+    <maxrpm> 2400 </maxrpm>
+    <numboostspeeds> 0 </numboostspeeds>
+    <!--<boostoverride>
+    {0 | 1} </boostoverride> unused -->
+    <!--<boostmanual>
+    {0 | 1} </boostmanual>
+  <ratedboost1 unit="{INHG | PA | ATM}"> {number} </ratedboost1>
+  <ratedpower1 unit="{HP | WATTS}"> {number} </ratedpower1>
+  <ratedrpm1> {number} </ratedrpm1>
+  <ratedaltitude1 unit="{FT | M}"> {number} </ratedaltitude1>
+ (repeat for speeds 2 and 3)-->
+    <!--<takeoffboost
+    unit="{INHG | PA | ATM}"> {number} </takeoffboost>-->
+    <!-- advanced tags! -->
+    <!--<bsfc
+    unit="{LBS/HP*HR | KG/KW*HR}"> {number} </bsfc>-->
+    <volumetric-efficiency> 1.0 </volumetric-efficiency>
+    <ram-air-factor> 0.0 </ram-air-factor>
+    <cooling-factor> 1.0 </cooling-factor>
+    <!-- Added in FlightGear 2.8 -->
+    <starter-torque> 100 </starter-torque>
+    <starter-rpm> 1000 </starter-rpm>
+    <static-friction unit="HP"> 5.0 </static-friction>
+    <man-press-lag> 0.2 </man-press-lag>
+    <boost-loss-factor> 0 </boost-loss-factor>
+    <!-- Added in FlightGear 2017.2 
+  <oil-pressure-relief-valve-psi> {number} </oil-pressure-relief-valve-psi>
+  <design-oil-temp-degK> {number} </design-oil-temp-degK>
+  <oil-pressure-rpm-max> {number} </oil-pressure-rpm-max>
+  <oil-viscosity-index> {number} </oil-viscosity-index>-->
+</piston_engine>
