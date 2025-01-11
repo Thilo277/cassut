@@ -5,6 +5,7 @@
         <long-description>Speed is life</long-description>
         <aircraft-version>0.1</aircraft-version>
         <!--<minimum-fg-version>2020.3.11</minimum-fg-version>-->
+        <expected-aircraft-dir-name>cassut</expected-aircraft-dir-name>
         <rating>
             <FDM type="int">1</FDM>
             <systems type="int">1</systems>
@@ -39,12 +40,53 @@
         <multiplay>
             <generic>
                 <int n="0">0</int>
+                <int n="1">0</int>
             </generic>
         </multiplay>
 
         <sound>
             <path type="string">Aircraft/cassut/Sounds/sounds.xml</path>
         </sound>
+
+        <previews>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/preview1.png</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/preview2.png</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Previews/preview3.png</path>
+            </preview>
+            <preview>
+                <type>cockpit</type>
+                <splash type="bool">true</splash>
+                <path>Previews/preview4.png</path>
+            </preview>
+        </previews>
+
+        <menubar>
+            <default>
+                <menu n="200">
+                    <label>Cassut III</label>
+                    <enabled type="bool">true</enabled>
+                    <item>
+                        <label>Select MP Leader</label>
+                        <binding>
+                            <command>dialog-show</command>
+                            <dialog-name>leader</dialog-name>
+                        </binding>
+                    </item>
+
+                </menu>
+            </default>
+        </menubar>
 
     </sim>
 
@@ -78,4 +120,10 @@
             <max-lb type="double">90000.0</max-lb>
         </weight>
     </payload>
+    <texter>
+        <smokeoverride>0</smokeoverride>
+        <selection>1</selection>
+        <callsign></callsign>
+    </texter>
+
 </PropertyList>
